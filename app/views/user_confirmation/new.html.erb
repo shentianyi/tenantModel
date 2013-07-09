@@ -1,0 +1,12 @@
+<%=flash[:notice]%>
+<%=flash[:alert]%>
+<p>if you have not received your confirmation letter, please click here to obtain a new one</p>
+<%= form_tag(:action=>'create') do %>
+    <%= label_tag(:email, "Email:") %>
+    <%= text_field_tag(:email) %>
+
+
+
+
+    <%= submit_tag("submit") %>
+<% end %>

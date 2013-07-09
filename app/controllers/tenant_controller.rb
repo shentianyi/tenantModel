@@ -1,2 +1,3 @@
 class TenantController < ApplicationController
+
 end

@@ -1,0 +1,16 @@
+<%= form_tag(:action=>'create') do %>
+    <%= label_tag(:email, "Email:") %>
+    <%= text_field_tag(:email) %>
+
+    <%= label_tag(:password, "Password:") %>
+    <%= password_field_tag(:password ) %>
+
+    <%= label_tag(:password_confirmation, "Confirm Password:") %>
+    <%= password_field_tag(:password_confirmation) %>
+
+    <%= label_tag(:company_name, "Company Name:") %>
+    <%= text_field_tag(:company_name) %>
+
+
+    <%= submit_tag("submit") %>
+<% end %>

@@ -25,7 +25,7 @@ class CreateUsers < ActiveRecord::Migration
       t.boolean :confirmed, :null=>false, :default=>false
 
 # Tenant Status
-      t.integer :tenantId
+      t.belongs_to :tenant
 
 
 
